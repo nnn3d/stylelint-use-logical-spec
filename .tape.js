@@ -383,6 +383,11 @@ module.exports = {
 		  warnings: 0,
 		},
 		{
+		  source: "body { margin: logical 20px 30px 10px 40px; }",
+		  args: ["always", {logicalKeyword: true}],
+		  warnings: 0,
+		},
+		{
 		  source: "body { margin: 20px 30px 10px 40px; }",
 		  expect: "body { margin: logical 20px 40px 10px 30px; }",
 		  args: ["always", { direction: "rtl", logicalKeyword: true }],
