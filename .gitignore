@@ -7,3 +7,5 @@ index.*.*
 !.rollup.js
 !.tape.js
 !.travis.yml
+!index.cjs.js
+!index.es.mjs
