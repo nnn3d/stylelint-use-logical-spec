@@ -226,7 +226,7 @@ var index = stylelint__default['default'].createPlugin(ruleName, (method, opts, 
               // eslint-disable-line
               let inputValues = valueParser__default['default'](physicalDecl.value).nodes.filter(value => value.type !== 'space').map(value => valueParser__default['default'].stringify(value));
 
-              if (!isDeclAnException(physicalDecl, propExceptions)) {
+              if (!isDeclAnException(physicalDecl, propExceptions) && inputValues[0] !== 'logical') {
                 let value;
 
                 if (dir === 'rtl' && inputValues.length === 4) {
